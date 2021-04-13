@@ -1,5 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+/* Variaveis */
+
+/* Cores */
+
+:root {
+    --bg-color: #e5e5e5;
+    --card-bg: #fff;
+    --card-text: rgb(0, 0, 0);
+    --card-separator: #d1d1d1;
+    --card-shadow: #bebebe73;
+}
+
+/* @media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #1d1d1d;
+        --card-bg: rgb(0, 0, 0);
+        --card-text: #fff;
+        --card-separator: #313131;
+        --card-shadow: #38383873;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    .card__img{
+        filter: invert(1000%);
+    }
+} */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,13 +36,19 @@
     font-weight: 500;
 }
 
+html {
+    font-size: 62.5%;
+    height: 100vh;
+}
+
 body {
     display: flex;
     flex-direction: row;
+    height: 100%;
 }
 
 main {
-    background-color: #e5e5e5;
+    background-color: var(--bg-color);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -28,15 +61,18 @@ main {
 
 .main__top-area {
     display: flex;
+    flex-wrap: wrap;
 }
 .card {
-    background: rgb(255, 255, 255);
+    background: var(--card-bg);
     border-radius: 10px;
-    box-shadow: 5px 5px 10px #bebebe73, -5px -5px 10px #bebebe73;
+    box-shadow: 5px 5px 10px var(--card-shadow),
+        -5px -5px 10px var(--card-shadow);
 }
 .card--top .card__title {
-    font-size: 0.8rem;
+    font-size: 1.28rem; /*1.28*/
     width: fit-content;
+    color: var(--card-text);
 }
 .card--top {
     height: 110px;
@@ -49,7 +85,7 @@ main {
 }
 .card__count {
     width: fit-content;
-    font-size: 2.7rem;
+    font-size: 4.32rem; /*4.32*/
     font-weight: 600;
     color: #f3b033;
 }
@@ -59,7 +95,7 @@ main {
 .separator {
     height: 55%;
     width: 1px;
-    background-color: #d1d1d1;
+    background-color: var(--card-separator);
 }
 
 /* Side Menu */
@@ -67,6 +103,7 @@ main {
 aside {
     background-color: #000000;
     height: 100vh;
+    height: 100%;
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -82,7 +119,7 @@ aside a {
     width: 60%;
 }
 .aside-item__title {
-    font-size: 0.8rem;
+    font-size: 1.24rem; /*1.28*/
     color: #fff;
     margin: 15px;
 }
@@ -111,11 +148,12 @@ aside a {
     padding: 25px;
 }
 .main__movie-area .card__title {
-    font-size: 1.2rem;
+    font-size: 1.92rem; /*1.92*/
     width: fit-content;
+    color: var(--card-text);
 }
 .main__movie-area .card__subtitle {
-    font-size: 1rem;
+    font-size: 1.6rem; /*1.6*/
     width: fit-content;
     color: rgb(139, 139, 139);
 }
@@ -124,4 +162,90 @@ aside a {
     width: 380px;
     height: 500px;
     padding: 25px;
+}
+.card--mpmovie .card__title {
+    margin: 5px 0;
+}
+.card__text {
+    font-size: 1.3rem;
+    color: #444;
+}
+
+.unstyledTable {
+    margin-top: 20px;
+    height: 80%;
+    width: 100%;
+    font-size: 1.3rem;
+}
+.unstyledTable thead {
+    border-bottom: 2px solid #444444;
+}
+table.unstyledTable thead th {
+    font-weight: normal;
+    text-align: left;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #44444429;
+    color: #444444da;
+    font-size: 1.3rem;
+}
+
+/* .card__pie {
+    height: 100px;
+}
+.pie__bg {
+    background-color: grey;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+    -moz-box-shadow: -1px 1px 3px #000;
+    -webkit-box-shadow: -1px 1px 3px #000;
+    -o-box-shadow: -1px 1px 3px #000;
+    box-shadow: -1px 1px 3px #000;
+}
+.pie {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+    clip: rect(0px, 50px, 100px, 0px);
+}
+.hold {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+    clip: rect(0px, 100px, 100px, 50px);
+}
+#pie__slice1 .pie {
+    background-color: #1b458b;
+    -webkit-transform:rotate(50deg);
+    -moz-transform:rotate(50deg);
+    -o-transform:rotate(50deg);
+    transform:rotate(50deg);
+} */
+
+@media (max-width: 1024px) {
+    .card--movie {
+        width: 550px;
+        height: 450px;
+    }
+}
+@media (max-width: 425px), (max-height: 808px) {
+    aside {
+        position: relative;
+        left: -305px;
+    }
+    main {
+        left: 0;
+    }
 }
