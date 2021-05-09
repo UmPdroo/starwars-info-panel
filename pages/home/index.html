@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Star Wars Info Panel</title>
-    <link rel="shortcut icon" href="./src/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../../src/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="../../globalstyle.css">
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -67,62 +67,18 @@
             <div class="movie-card card card--movie">
                 <h1 class="card__title">Conheça os filmes</h1>
                 <h2 class="card__subtitle">Veja aqui os filmes da trilogia principal da saga</h2>
-                <table class="unstyledTable">
+                <table>
                     <thead>
-                    <tr>
-                    <th>Nome do Filme</th>
-                    <th>Ano</th>
-                    <th>Bilheteria</th>
-                    </tr>
+                        <tr>
+                            <th>Nome do Filme</th>
+                            <th>Ano</th>
+                            <th>Diretor</th>
+                        </tr>
                     </thead>
-                    <tbody>
-                    <tr>
-                    <td>Epis&oacute;dio 1 - A Amea&ccedil;a Fantasma</td>
-                    <td>1999</td>
-                    <td>US$ 1,03 bilh&atilde;o</td>
-                    </tr>
-                    <tr>
-                    <td>Epis&oacute;dio 2 - Ataque dos Clones</td>
-                    <td>2002</td>
-                    <td>US$ 649.4 milh&otilde;es</td>
-                    </tr>
-                    <tr>
-                    <td>Epis&oacute;dio 3 - A Vingan&ccedil;a dos Sith</td>
-                    <td>2005</td>
-                    <td>US$ 850 milh&otilde;es</td>
-                    </tr>
-                    <tr>
-                    <td>Epis&oacute;dio 4 - Uma Nova Esperan&ccedil;a</td>
-                    <td>1977</td>
-                    <td>US$ 775.5 milh&otilde;es</td>
-                    </tr>
-                    <tr>
-                    <td>Epis&oacute;dio 5 - O Imp&eacute;rio Contra-Ataca</td>
-                    <td>1980</td>
-                    <td>US$ 547.9 milh&otilde;es</td>
-                    </tr>
-                    <tr>
-                    <td>Epis&oacute;dio 6 - O Retorno de Jedi</td>
-                    <td>1983</td>
-                    <td>US$ 475.3 milh&otilde;es</td>
-                    </tr>
-                    <tr>
-                    <td>Epis&oacute;dio 7 - O Despertar da For&ccedil;a</td>
-                    <td>2015</td>
-                    <td>US$ 2,070 bilh&otilde;es</td>
-                    </tr>
-                    <tr>
-                    <td>Epis&oacute;dio 8 - Os &Uacute;ltimos Jedi</td>
-                    <td>2017</td>
-                    <td>US$ 1,33 bilh&atilde;o</td>
-                    </tr>
-                    <tr>
-                    <td>Epis&oacute;dio 9 - A Ascens&atilde;o Skywalker</td>
-                    <td>2019</td>
-                    <td>N/A</td>
-                    </tr>
+                    <tbody class="movieList">
+                        
                     </tbody>
-                    </table>
+                </table>
             </div>
             <div class="movie-card card card--mpmovie">
                 <h1 class="card__title">Do que se trata?</h1>
@@ -137,6 +93,8 @@
                 </div> -->
             </div>
         </div>
+
+        <script src="../../scripts/index.js"></script>
     </main>
 </body>
 </html>

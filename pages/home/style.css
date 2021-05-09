@@ -145,7 +145,7 @@ aside a {
 .card--movie {
     width: 600px;
     height: 500px;
-    padding: 25px;
+    padding: 40px 35px;
 }
 .main__movie-area .card__title {
     font-size: 1.92rem; /*1.92*/
@@ -171,22 +171,28 @@ aside a {
     color: #444;
 }
 
-.unstyledTable {
+table {
     margin-top: 20px;
     height: 80%;
     width: 100%;
     font-size: 1.3rem;
 }
-.unstyledTable thead {
+table thead {
     border-bottom: 2px solid #444444;
 }
-table.unstyledTable thead th {
+table thead th {
     font-weight: normal;
     text-align: left;
     padding-bottom: 9px;
     border-bottom: 1px solid #44444429;
     color: #444444da;
     font-size: 1.3rem;
+}
+table thead th:first-child {
+    width: 55%;
+}
+table thead th:nth-child(2) {
+    width: 15%;
 }
 
 /* .card__pie {
