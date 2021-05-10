@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+// ==========================================================================
+// General
+// ==========================================================================
+
+@import "general/general-config";
+@import "general/variables";
+@import "general/functions";
+@import "general/reset";
+@import "general/z-index";
+
+// :root {
+// 	@each $name, $color in $-colors {
+// 		--#{$name}: #{$color};
+// 	}
+// @each $name, $color in $-colors {
+//   --color-#{$name}: #{$color};
+// }
+// }
+
+// ==========================================================================
+// Layout ( eg. Header, Main, Footer )
+// ==========================================================================
+
+@import "layout/main";
+@import "layout/side-menu";
+@import "layout/movie-area";
+@import "layout/search-results";
+@import "layout/search-area";
+
+// ==========================================================================
+// Component ( eg. Buttons, Texts )
+// ==========================================================================
+
+@import "components/card";
+@import "components/search-item";
+
+// ==========================================================================
+// Theme ( eg. Dark )
+// ==========================================================================
+
+// @import "theme/";
+
+// ==========================================================================
+// Pages
+// ==========================================================================
+
+// @import "pages/character/main";

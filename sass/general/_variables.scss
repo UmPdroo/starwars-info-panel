@@ -1,0 +1,128 @@
+// ==========================================================================
+// Colors
+// ==========================================================================
+
+// webfatorial
+// ==========================================================================
+
+$webfatorial-colors: (
+	"webfatorial-primary": #157bad,
+	"webfatorial-secondary": #06618c,
+	"webfatorial-success": #3cc368,
+	"webfatorial-warning": #f5a600,
+	"webfatorial-error": #ec5840,
+	"webfatorial-gray-1": #363636,
+	"webfatorial-gray-2": #4f4f4f,
+	"webfatorial-gray-3": #828282,
+	"webfatorial-gray-4": #bdbdbd,
+	"webfatorial-gray-5": #e0e0e0,
+	"webfatorial-white": #fcfcfc,
+);
+
+// webfatorial
+// ==========================================================================
+
+$sweava-colors: (
+	"sweava-dark": #252b42,
+	"sweava-wine": #200e32,
+	"sweava-purple": #5956e9,
+	"sweava-purple-2": #7485c1,
+	"sweava-pink": #fab8c3,
+	"sweava-yellow": #ffdc5f,
+	"sweava-blue": #58c0ea,
+	"sweava-blue-2": #7dccec,
+	"sweava-gray-1": #f6f6f9,
+	"sweava-gray-2": #e3e3e3,
+	"sweava-gray-3": #737373,
+	"sweava-white": #fff,
+);
+
+// dpw
+// ==========================================================================
+
+$dpw-colors: (
+	"dpw-primary": #3da6c8,
+	"dpw-secondary": darken(#3da6c8, 12%),
+);
+
+// Social Media
+// ==========================================================================
+
+$social-media-colors: (
+	"facebook": #3b5998,
+	"twitter": #00aced,
+	"linkedin": #0077b5,
+	"youtube": #cd201f,
+	"instagram": #e4405f,
+	"github": #333,
+);
+
+// ==========================================================================
+// Measures
+// ==========================================================================
+
+$global-max-width-raw: 780;
+$global-max-width: rem($global-max-width-raw);
+
+$global-font-size: rem(18);
+$global-line-height: 1.5;
+$global-radius: rem(6);
+$global-module-size: rem(30);
+
+// ==========================================================================
+// Transitions
+// ==========================================================================
+
+$transition-duration: 305ms;
+$transition-duration-complex: 385ms;
+$transition-duration-entrance: 235ms;
+$transition-duration-exit: 205ms;
+$transition-duration-fast: 150ms;
+
+$transition-function-ease-in-expo: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+$transition-function-ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+$transition-function-ease-in-back: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+$transition-function-ease-out-back: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+$transition-function-ease-in-out-circ: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+$transition-function-ease-in-out-quint: cubic-bezier(0.86, 0, 0.07, 1);
+$transition-function-elastic: cubic-bezier(0.175, 0.885, 0.41, 1.46);
+
+// ==========================================================================
+// Others
+// ==========================================================================
+
+$z-indexes: (
+	"above": 500,
+	"modal": 400,
+	"overlay": 300,
+	"dropdown": 200,
+	"default": 1,
+	"below": -1,
+);
+
+$font-weight: (
+	"regular": 500,
+	"medium": 600,
+	"bold": 700,
+);
+
+$bg-color: #e5e5e5;
+$card-bg: #fff;
+$card-text: rgb(0, 0, 0);
+$card-separator: #d1d1d1;
+$card-shadow: #bebebe73;
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    $bg-color: #1d1d1d;
+    $card-bg: rgb(0, 0, 0);
+    $card-text: #fff;
+    $card-separator: #313131;
+    $card-shadow: #38383873;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .card__img{
+      filter: invert(1000%);
+  }
+} */

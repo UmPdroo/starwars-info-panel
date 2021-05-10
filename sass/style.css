@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    $bg-color: #1d1d1d;
+    $card-bg: rgb(0, 0, 0);
+    $card-text: #fff;
+    $card-separator: #313131;
+    $card-shadow: #38383873;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .card__img{
+      filter: invert(1000%);
+  }
+} */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+main {
+  background-color: var(--bg-color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.main__top-area {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main__movie-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+aside {
+  background-color: #000000;
+  height: 100vh;
+  height: 100%;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+
+aside a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  text-decoration: none;
+  width: 60%;
+}
+
+.aside-item__title {
+  font-size: 1.24rem;
+  /*1.28*/
+  color: #fff;
+  margin: 15px;
+}
+
+.aside-item__logo {
+  width: 36%;
+}
+
+.aside__logo {
+  width: 80%;
+  margin: 45px 0;
+}
+
+.main__movie-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.movie-card {
+  margin: 0 15px;
+}
+
+.card--movie {
+  width: 600px;
+  height: 500px;
+  padding: 40px 35px;
+}
+
+.main__movie-area .card__title {
+  font-size: 1.92rem;
+  /*1.92*/
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: black;
+}
+
+.main__movie-area .card__subtitle {
+  font-size: 1.6rem;
+  /*1.6*/
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #8b8b8b;
+}
+
+.card--mpmovie {
+  width: 380px;
+  height: 500px;
+  padding: 25px;
+}
+
+.card--mpmovie .card__title {
+  margin: 5px 0;
+}
+
+.card__text {
+  font-size: 1.3rem;
+  color: #444;
+}
+
+table {
+  margin-top: 20px;
+  height: 80%;
+  width: 100%;
+  font-size: 1.3rem;
+}
+table thead {
+  border-bottom: 2px solid #444444;
+}
+table thead th {
+  font-weight: normal;
+  text-align: left;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #44444429;
+  color: #444444da;
+  font-size: 1.3rem;
+  height: 32px;
+}
+table thead th:first-child {
+  width: 55%;
+}
+table thead th:nth-child(2) {
+  width: 15%;
+}
+table tbody tr:first-child {
+  padding-top: 10px;
+}
+
+.search-results {
+  padding-top: 50px;
+}
+
+.search-area {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px #bebebe73, -1px -1px 3px #bebebe73;
+}
+.search-area input {
+  height: 40px;
+  width: 570px;
+  border-radius: 10px 0 0 10px;
+  border: 1px solid #bebebe73;
+  padding: 10px 20px;
+  outline: none;
+}
+.search-area button {
+  height: 40px;
+  width: 40px;
+  background-color: #0000;
+  border-radius: 0 10px 10px 0;
+  border: 1px solid #bebebe73;
+  border-left: none;
+  transition: 0.1s ease-in-out;
+}
+.search-area button svg {
+  transition: 0.1s ease-in-out;
+}
+.search-area button:hover {
+  background-color: #555;
+}
+.search-area button:hover svg {
+  color: #fff;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #bebebe73, -5px -5px 10px #bebebe73;
+}
+
+.card--top .card__title {
+  font-size: 1.28rem;
+  /*1.28*/
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: black;
+}
+
+.card--top {
+  height: 110px;
+  width: 220px;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card__count {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 4.32rem;
+  /*4.32*/
+  font-weight: 600;
+  color: #f3b033;
+}
+
+.planets-card {
+  width: 425px;
+}
+
+.separator {
+  height: 55%;
+  width: 1px;
+  background-color: #d1d1d1;
+}
+
+.search-results li {
+  list-style: none;
+  margin: 25px;
+  width: 500px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #bebebe73, -5px -5px 10px #bebebe73;
+  padding: 20px 25px;
+}
+.search-results li span {
+  display: inline-block;
+  font-size: 1.4rem;
+}
+.search-results li span strong {
+  color: #df9918;
+  font-weight: 600;
+  padding: 0 5px;
+}
+.search-results li #name {
+  font-size: 1.6rem;
+  width: 100%;
+  padding: 5px 0 20px;
+}
+.search-results li #homeworld,
+.search-results li #gender,
+.search-results li #birth-year {
+  width: 45%;
+  color: rgba(0, 0, 0, 0.541);
+}/*# sourceMappingURL=style.css.map */
