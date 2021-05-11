@@ -1,10 +1,16 @@
 .search-area {
 	width: max-content;
 	display: flex;
-    align-items: center;
-    background: $card-bg;
+	align-items: center;
+	background: $card-bg;
 	border-radius: 10px;
 	box-shadow: 1px 1px 3px $card-shadow, -1px -1px 3px $card-shadow;
+	margin-top: 30px;
+	display: none;
+
+	&.on {
+		display: flex;
+	}
 
 	input {
 		height: 40px;
@@ -15,24 +21,24 @@
 		outline: none;
 	}
 	button {
-        height: 40px;
+		height: 40px;
 		width: 40px;
 		background-color: #0000;
 		border-radius: 0 10px 10px 0;
 		border: 1px solid $card-shadow;
-        border-left: none;
-        transition: 0.1s ease-in-out;
-        
-        svg {
-            transition: 0.1s ease-in-out;
-        }
-        
-        &:hover {
-            background-color: #555;
+		border-left: none;
+		transition: 0.1s ease-in-out;
 
-            svg {
-                color: #fff;
-            }
-        }
+		svg {
+			transition: 0.1s ease-in-out;
+		}
+
+		&:hover {
+			background-color: #555;
+
+			svg {
+				color: #fff;
+			}
+		}
 	}
 }

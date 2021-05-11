@@ -1,30 +1,33 @@
 aside {
-    background-color: #000000;
-    height: 100vh;
-    height: 100%;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 25px;
+	background-color: #000000;
+	height: 100vh;
+	height: 100%;
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 25px;
+	position: fixed;
+	top: 0;
+	left: 0;
 }
 aside a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-    text-decoration: none;
-    width: 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px;
+	text-decoration: none;
+	width: 60%;
 }
 .aside-item__title {
-    font-size: 1.24rem; /*1.28*/
-    color: #fff;
-    margin: 15px;
+	font-size: 1.24rem; /*1.28*/
+	color: #fff;
+	margin: 15px;
 }
 .aside-item__logo {
-    width: 36%;
+	width: 36%;
 }
 .aside__logo {
-    width: 80%;
-    margin: 45px 0;
+	width: 80%;
+	margin: 45px 0;
 }

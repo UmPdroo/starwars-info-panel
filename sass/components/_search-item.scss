@@ -2,7 +2,9 @@
 	li {
 		list-style: none;
 		margin: 25px;
-		width: 500px;
+		min-width: 700px;
+		width: min-content;
+		max-width: 1000px;
 		background: $card-bg;
 		border-radius: 10px;
 		box-shadow: 5px 5px 10px $card-shadow, -5px -5px 10px $card-shadow;
@@ -28,8 +30,11 @@
 		#homeworld,
 		#gender,
 		#birth-year {
-			width: 45%;
+			width: 28%;
 			color: rgba(0, 0, 0, 0.541);
+		}
+		#homeworld {
+			width: 39%;
 		}
 	}
 }

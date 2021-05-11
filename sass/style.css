@@ -39,6 +39,7 @@ body {
   display: flex;
   flex-direction: row;
   height: 100%;
+  justify-content: flex-end;
 }
 
 main {
@@ -47,8 +48,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 15px;
+}
+
+main {
+  width: calc(100% - 300px);
 }
 
 .main__top-area {
@@ -72,6 +77,9 @@ aside {
   flex-direction: column;
   align-items: center;
   padding: 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 aside a {
@@ -190,6 +198,11 @@ table tbody tr:first-child {
   background: #fff;
   border-radius: 10px;
   box-shadow: 1px 1px 3px #bebebe73, -1px -1px 3px #bebebe73;
+  margin-top: 30px;
+  display: none;
+}
+.search-area.on {
+  display: flex;
 }
 .search-area input {
   height: 40px;
@@ -266,7 +279,11 @@ table tbody tr:first-child {
 .search-results li {
   list-style: none;
   margin: 25px;
-  width: 500px;
+  min-width: 700px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  max-width: 1000px;
   background: #fff;
   border-radius: 10px;
   box-shadow: 5px 5px 10px #bebebe73, -5px -5px 10px #bebebe73;
@@ -289,6 +306,9 @@ table tbody tr:first-child {
 .search-results li #homeworld,
 .search-results li #gender,
 .search-results li #birth-year {
-  width: 45%;
+  width: 28%;
   color: rgba(0, 0, 0, 0.541);
+}
+.search-results li #homeworld {
+  width: 39%;
 }/*# sourceMappingURL=style.css.map */
