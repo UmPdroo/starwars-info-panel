@@ -1,63 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Star Wars Info Panel</title>
-    <link rel="shortcut icon" href="../../src/favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../../sass/style.css">
-    <script src="https://unpkg.com/feather-icons"></script>
-</head>
-<!-- bixs cosplay -->
-<body>
-    <aside>
-        <img src="../../src/icons/logo.png" alt="Star Wars Logo" class="aside__logo">
-        <a href="../../">
-            <img src="../../src/icons/dashboard.svg" alt="Dashboard Logo" class="aside-item__logo">
-            <h1 class="aside-item__title">Dashboard</h1>
-        </a>
-        <a href="#">
-            <img src="../../src/icons/personagens.svg" alt="Characters Logo" class="aside-item__logo">
-            <h1 class="aside-item__title">Personagens</h1>
-        </a>
-        <a href="#">
-            <img src="../../src/icons/planetas.svg" alt="Planets & Moons Logo" class="aside-item__logo">
-            <h1 class="aside-item__title">Planetas</h1>
-        </a>
-        <a href="#">
-            <img src="../../src/icons/nave.svg" alt="Ships Logo" class="aside-item__logo">
-            <h1 class="aside-item__title">Naves</h1>
-        </a>
-        <a href="#">
-            <h1 class="aside-item__title">Configurações</h1>
-        </a>
-    </aside>
-    <main>
-        <form action="" class="search-area search-people on" onsubmit="Form.submit(event)">
-            <input type="search" name="Search bar" id="search-bar">
-            <button type="submit">
-                <i data-feather="search"></i>
-            </button>
-        </form>
-        <form action="" class="search-area search-ships" onsubmit="Form.submit(event)">
-            <input type="search" name="Search bar" id="search-bar">
-            <button type="submit">
-                <i data-feather="search"></i>
-            </button>
-        </form>
-        <form action="" class="search-area search-planets" onsubmit="Form.submit(event)">
-            <input type="search" name="Search bar" id="search-bar">
-            <button type="submit">
-                <i data-feather="search"></i>
-            </button>
-        </form>
-        <ul class="search-results">
-        </ul>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Star Wars Info Panel</title>
+		<link
+			rel="shortcut icon"
+			href="../../src/favicon.svg"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="../../sass/style.css" />
+		<script src="https://unpkg.com/feather-icons"></script>
+	</head>
+	<!-- bixs cosplay -->
+	<body>
+		<aside>
+			<img
+				src="../../src/icons/logo.png"
+				alt="Star Wars Logo"
+				class="aside__logo"
+			/>
+			<a href="../../">
+				<img
+					src="../../src/icons/dashboard.svg"
+					alt="Dashboard Logo"
+					class="aside-item__logo"
+				/>
+				<h1 class="aside-item__title">Dashboard</h1>
+			</a>
+			<a href="#" onclick="Utils.setSearchType('people')">
+				<img
+					src="../../src/icons/personagens.svg"
+					alt="Characters Logo"
+					class="aside-item__logo"
+				/>
+				<h1 class="aside-item__title">Personagens</h1>
+			</a>
+			<a href="#" onclick="Utils.setSearchType('planets')">
+				<img
+					src="../../src/icons/planetas.svg"
+					alt="Planets & Moons Logo"
+					class="aside-item__logo"
+				/>
+				<h1 class="aside-item__title">Planetas</h1>
+			</a>
+			<a href="#" onclick="Utils.setSearchType('starships')">
+				<img
+					src="../../src/icons/nave.svg"
+					alt="Ships Logo"
+					class="aside-item__logo"
+				/>
+				<h1 class="aside-item__title">Naves</h1>
+			</a>
+			<a href="#">
+				<h1 class="aside-item__title">Configurações</h1>
+			</a>
+		</aside>
+		<main>
+			<form action="" class="search-area" onsubmit="Form.submit(event)">
+				<input
+					type="search"
+					name="Search bar"
+					id="search-bar"
+				/>
+				<button type="submit">
+					<i data-feather="search"></i>
+				</button>
+			</form>
+            <div class="loading on">
+                <div></div>
+            </div>
+			<ul class="search-results"></ul>
+		</main>
 
-    </main>
-    
-    <script>feather.replace()</script>
-    <script src="../../scripts/characters.js"></script>
-</body>
+		<script>
+			feather.replace();
+		</script>
+		<script src="../../scripts/search.js"></script>
+	</body>
 </html>

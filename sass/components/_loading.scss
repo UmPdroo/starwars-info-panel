@@ -1,0 +1,20 @@
+.loading {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid #11111152;
+    border-top: 2px solid;
+    display: none;
+    margin-top: 50px;
+
+    &.on {
+        display: block;
+        animation: girando 0.5s infinite cubic-bezier(0.47,-0.01, 0, 1);
+    }
+}
+
+@keyframes girando {
+    to {
+        transform: rotate(360deg);
+    }
+}

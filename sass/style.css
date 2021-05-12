@@ -199,7 +199,6 @@ table tbody tr:first-child {
   border-radius: 10px;
   box-shadow: 1px 1px 3px #bebebe73, -1px -1px 3px #bebebe73;
   margin-top: 30px;
-  display: none;
 }
 .search-area.on {
   display: flex;
@@ -311,4 +310,45 @@ table tbody tr:first-child {
 }
 .search-results li #homeworld {
   width: 39%;
+}
+.search-results li #name {
+  font-size: 1.6rem;
+  width: 100%;
+  padding: 5px 0 20px;
+}
+.search-results li #credits,
+.search-results li #manufactory,
+.search-results li #model {
+  width: 33%;
+  color: rgba(0, 0, 0, 0.541);
+}
+.search-results li #credits {
+  width: 32%;
+}
+
+.loading {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 2px solid #11111152;
+  border-top: 2px solid;
+  display: none;
+  margin-top: 50px;
+}
+.loading.on {
+  display: block;
+  -webkit-animation: girando 0.5s infinite cubic-bezier(0.47, -0.01, 0, 1);
+          animation: girando 0.5s infinite cubic-bezier(0.47, -0.01, 0, 1);
+}
+
+@-webkit-keyframes girando {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes girando {
+  to {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=style.css.map */

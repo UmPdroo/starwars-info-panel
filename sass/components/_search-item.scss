@@ -21,6 +21,8 @@
 			}
 		}
 
+		// People
+
 		#name {
 			font-size: 1.6rem;
 			width: 100%;
@@ -35,6 +37,24 @@
 		}
 		#homeworld {
 			width: 39%;
+		}
+
+		// Starships
+
+		#name {
+			font-size: 1.6rem;
+			width: 100%;
+			padding: 5px 0 20px;
+		}
+
+		#credits,
+		#manufactory,
+		#model {
+			width: 33%;
+			color: rgba(0, 0, 0, 0.541);
+		}
+		#credits {
+			width: 32%;
 		}
 	}
 }
